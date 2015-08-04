@@ -17,7 +17,7 @@ extra-source-files:  README.md
 cabal-version:       >=1.10
 
 library
-  -- exposed-modules:     
+  exposed-modules:     Language.Makefile.Expansion
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base >=4.8 && <4.9
