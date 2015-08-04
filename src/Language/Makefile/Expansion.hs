@@ -1,6 +1,6 @@
 {-# LANGUAGE ViewPatterns, GADTs #-}
 
-module Expansion (Expansion(..), expansion, interpr, accum) where
+module Language.Makefile.Expansion (Expansion(..), expansion, interpr, accum) where
 
 data Eater = Toplev { prepender :: Eater -> Char -> Eater, accum :: Expansion String }
            | Deeper { prepender :: Eater -> Char -> Eater, accum :: Expansion String, cont :: Eater, collapse :: Eater -> Eater }
